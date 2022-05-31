@@ -1,0 +1,54 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner bg-dark">
+      <div class="carousel-item active">
+          <div class="row">
+            <img src=".\assets\img\Webinar-bro.png" class="d-block  imgn col-md-3" alt="...">
+            <div class="col-md-4 px-0">
+                <h1 class="display-4 fst-italic text-white">Comparte tus clases</h1>
+                <p class="lead my-3 text-white">Usa nuestra plataforma para compartir tus conocimientos con los que quieren una oportunidad de ingreso.</p>             
+            </div>
+          </div>
+        
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+            <img src=".\assets\img\Webinar-pana.png" class="d-block  imgn col-md-3" alt="...">
+            <div class="col-md-4 px-0">
+                <h1 class="display-4 fst-italic text-white">Comparte tus clases</h1>
+                <p class="lead my-3 text-white">Usa nuestra plataforma para compartir tus conocimientos con los que quieren una oportunidad de ingreso.</p>             
+            </div>
+          </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div>
+    <h1 class="display-4  text-black txtTitulo">CURSOS</h1>
+    <div *ngFor=" let curso of cursos ">
+    <div class="card mb-3 CardCurso" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src=".\assets\img\historia.jpg" class="img-fluid rounded-start imgnCurso" alt="{{curso.titulo}}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{curso.nombre}}</h5>
+              <p class="card-text">{{curso.descripcion}}</p>
+              <p class="card-text"><small class="text-muted">Duracion</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
