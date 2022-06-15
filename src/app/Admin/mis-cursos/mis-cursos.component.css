@@ -1,0 +1,53 @@
+.imgn{
+    margin-left: 20%;
+}
+
+.imgnCurso{
+    width: 100%;
+    height: 100%;
+}
+.txtTitulo{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.CardCurso{
+    margin-top: 15px;
+    margin-left: 5%;
+}
+.CardMiCurso{
+    margin-bottom: 2%;
+}
+
+.bg-per{
+    background: #4B6274 ;
+}
+
+.ul-ag{
+    margin-left: 10%;
+    margin-right: 20px;
+}
+
+.ul-ag li{
+    margin-left: 50px;
+}
+
+.nav-alu{
+    background: #ffffff00;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.nav-alu:hover{
+    color:#4B6274;
+    background: #ffffff;
+}
+.nav-alu.active{
+    color:#4B6274;
+    background: #ffffff;
+}
+
+.btn-MC{
+    margin-right: 20px;
+}

@@ -1,0 +1,19 @@
+.Form-MC{
+    margin: 5%;
+
+}
+
+.can{
+    margin-right: 10px;
+}
+
+.error{
+    color: red;
+    font-size: 15px;
+    margin-top: -18px;
+    margin-bottom: 20px;
+}
+
+.starter-template{
+    padding: 2%;
+}

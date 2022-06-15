@@ -1,0 +1,57 @@
+<app-mis-cursos> </app-mis-cursos>
+
+<div class="container Form-MC" id="formCurso">
+     
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title h4" id="exampleModalLgLabel"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agregar curso</font></font></h5>
+            
+          </div>
+          <hr >
+          <div class="starter-template">
+          
+            <form [formGroup]="AgCurso" (ngSubmit)="enviarDatos(AgCurso)" novalidate>
+              
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                  <input formControlName="nombre"  class="form-control"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                  
+                </div>
+                <div *ngIf="AgCurso.get('nombre').hasError('required')" class="error">
+                  Por favor agregar un nombre de curso.
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Profesor</span>
+                  <input  formControlName="profesor" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                </div>
+                <div *ngIf="AgCurso.get('profesor').hasError('required')" class="error">
+                  Por favor agregar un nombre del profesor.
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                  <textarea formControlName="descripcion" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div *ngIf="AgCurso.get('descripcion').hasError('required')" class="error">
+                  Por favor agregar una descripcion del curso.
+                </div>
+
+               <!-- <div class="input-group mb-3">
+                  <label class="input-group-text" for="inputGroupFile01">Imagen</label>
+                  <input type="file" formControlName="imagen" class="form-control" id="inputGroupFile01">
+                </div>
+                <div *ngIf="AgCurso.get('imagen').hasError('required')" class="error">
+                  Por favor agregar una imagen referente al curso.
+                </div>-->
+                <hr >
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary can">Cancelar</button>
+                  <input type="submit" class="btn btn-success " value="Guardar" [disabled]="!AgCurso.valid"  />
+                </div>
+            </form> 
+          </div>
+        </div>
+      </div>
+  </div>

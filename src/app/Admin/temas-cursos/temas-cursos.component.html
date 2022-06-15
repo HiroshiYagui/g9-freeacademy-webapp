@@ -1,0 +1,14 @@
+<app-header-adm> </app-header-adm>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-inner bg-dark">
+      <div class="carousel-item active">
+          <div class="row" *ngIf="cursoInfo">
+            <img src=".\assets\img\historia.jpg" class="d-block opacity-50  imgn col-md-3" alt="...">
+            <div class="col-md-4 px-0">
+                <h1 class="display-4 fst-italic text-white">{{cursoInfo.nombre}}</h1>
+                <p class="lead my-3 text-white">{{cursoInfo.descripcion}}</p>             
+            </div>
+          </div>
+      </div>
+    </div> 
+</div>
