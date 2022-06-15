@@ -24,7 +24,7 @@ const routes: Routes = [
   { path:'Lista-mis-cursos',component:ListaMisCursosComponent},
 
   { path: '' , redirectTo: 'cursos' , pathMatch: 'full' },
-  { path: '**' , component: ListaDeVideosComponent }
+  { path: '**' , component: CursosComponent}
 ];
 
 @NgModule({
