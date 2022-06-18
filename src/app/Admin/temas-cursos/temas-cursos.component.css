@@ -6,3 +6,19 @@
     border-radius: 30px;
 }
 
+.colorsus{
+    color: #4B6274;
+    background-color: #ffffff;
+}
+.colorsus:hover{
+    color: #ffffff;
+    background-color: #4B6274;
+    border: #4B6274;
+}
+.colorsus :active{
+    color: #ffffff;
+    background-color: #4B6274;
+    border: #4B6274;
+}
+
+

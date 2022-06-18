@@ -32,7 +32,7 @@ export class TemasCursosComponent implements OnInit {
     this.http.get('http://Apirest-env.eba-tctazmdb.us-east-2.elasticbeanstalk.com/v1/cursos/' + this.id)
       .subscribe((res) => {
         console.log(res)
-        this.cursoInfo = res[0];
+        this.cursoInfo = res;
       });
   }
 
