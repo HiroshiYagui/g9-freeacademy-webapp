@@ -6,7 +6,7 @@
     <div class="row justify-content-around row-cols-3 row-cols-sm-2 row-cols-md-2 g-3">
 
 
-      <div class="col CardMiCurso">
+      <div *ngFor=" let micurso of misCursos " class="col CardMiCurso">
         <div class="card mb-6 CardCurso" style="max-width: 600px;">
           <div class="row g-0">
             <div class="col-md-6 ">
@@ -14,8 +14,8 @@
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Name Curso</h5>
-                <p class="card-text">Descripciòn curso.</p>
+                <h5 class="card-title">{{micurso.nombreCurso}}</h5>
+                <p class="card-text">{{micurso.fechaSuscripcion}}</p>
                 <p class="card-text"><small class="text-muted">Duracion</small></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -24,10 +24,12 @@
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
 
+        
       </div>
 
 

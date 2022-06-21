@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-lista-mis-cursos',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaMisCursosComponent implements OnInit {
 
-  constructor() { }
+  misCursos;
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.misCursos=[];
+    this.peticionSuscripciones();
   }
 
+  peticionSuscripciones(){
+    this.http.get('http://Apirest-env.eba-tctazmdb.us-east-2.elasticbeanstalk.com/v1/suscripciones').subscribe( ( respuesta ) => {
+      this.misCursos = respuesta;
+    });
+  }
 }
