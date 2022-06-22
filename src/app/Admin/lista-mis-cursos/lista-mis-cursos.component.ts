@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-lista-mis-cursos',
@@ -10,6 +11,7 @@ export class ListaMisCursosComponent implements OnInit {
 
   misCursos;
 
+  MoCurso:FormGroup;
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -22,4 +24,5 @@ export class ListaMisCursosComponent implements OnInit {
       this.misCursos = respuesta;
     });
   }
+
 }
