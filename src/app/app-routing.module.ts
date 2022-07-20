@@ -22,6 +22,7 @@ const routes: Routes = [
   { path: 'Temas/:cursoID' , component: TemasCursosComponent },
   { path:'form-mis-cursos',component:FormMisCursosComponent},
   { path:'Lista-mis-cursos',component:ListaMisCursosComponent},
+  { path: 'lista-video/:cursoID' , component: ListaDeVideosComponent },
 
   { path: '' , redirectTo: 'cursos' , pathMatch: 'full' },
   { path: '**' , component: CursosComponent}
